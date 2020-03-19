@@ -20,6 +20,7 @@ if dein#load_state('$HOME/.vim/dein')
   call dein#add('previm/previm')
   call dein#add('vim-jp/vimdoc-ja')
   call dein#add('w0rp/ale')
+  call dein#add('altercation/vim-colors-solarized')
 
   " Required:
     call dein#end()
@@ -28,7 +29,6 @@ endif
 
 " Required:
 filetype plugin indent on
-syntax enable
 
 " If you want to install not installed plugins on startup.
 if dein#check_install()
@@ -38,6 +38,7 @@ endif
 "End dein Scripts-------------------------
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
 
 set helplang=ja
 set number
@@ -47,4 +48,13 @@ set visualbell
 set noswapfile
 set autoread
 set showcmd
+set termguicolors
 
+syntax enable
+colorscheme iceberg
+
+noremap ; :
+
+let g:airline#extensions#tabline#enabled = 1
+nmap <C-p> <Plug>AirlineSelectPrevTab
+nmap <C-n> <Plug>AirlineSelectNextTab

@@ -1,24 +1,10 @@
-#### environment
+<!-- Thank you for using Iceberg! -->
+<!-- Make sure your environment before submitting a issue. -->
+Environment:
+- OS
+- Vim (`:version`)
+- Terminal
 
-- vim: ????
-- vim-airline: ????
-- colorscheme: ????
-- OS: ????
-- Have you reproduced with a minimal vimrc: ???
-- What is your airline configuration: ???
-if you are using terminal:
-- terminal: ????
-- $TERM variable: ???
-- color configuration (:set t_Co?): 
-if you are using Neovim:
-- does it happen in Vim: ???
-
-#### actual behavior
-
-????
-
-#### expected behavior
-
-????
-
-#### screen shot (if possible)
+If you have a trouble with coloration and are using Vim/Neovim with terminal:
+- [ ] Does your Vim support full colors? (`:set termguicolors`)
+- [ ] Does your terminal support full colors? (e.g. Terminal.app doesn't support it)
